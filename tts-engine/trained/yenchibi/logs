@@ -1,0 +1,94 @@
+/data/tts/.local/lib/python3.6/site-packages/ZaG2P/constant.py:20: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  parser = yaml.load(f)
+/data/tts/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/data/tts/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/data/tts/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/data/tts/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/data/tts/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/data/tts/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/data/tts/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/data/tts/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/data/tts/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/data/tts/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/data/tts/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/data/tts/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+2019-09-11 22:29:09,026	WARNING	
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+/data/tts/.local/lib/python3.6/site-packages/torch/serialization.py:453: SourceChangeWarning: source code of class 'glow.WaveGlow' has changed. you can retrieve the original source code by accessing the object's source attribute or set `torch.nn.Module.dump_patches = True` and use the patch tool to revert the changes.
+  warnings.warn(msg, SourceChangeWarning)
+/data/tts/.local/lib/python3.6/site-packages/torch/serialization.py:453: SourceChangeWarning: source code of class 'torch.nn.modules.conv.ConvTranspose1d' has changed. you can retrieve the original source code by accessing the object's source attribute or set `torch.nn.Module.dump_patches = True` and use the patch tool to revert the changes.
+  warnings.warn(msg, SourceChangeWarning)
+/data/tts/.local/lib/python3.6/site-packages/torch/serialization.py:453: SourceChangeWarning: source code of class 'torch.nn.modules.conv.Conv1d' has changed. you can retrieve the original source code by accessing the object's source attribute or set `torch.nn.Module.dump_patches = True` and use the patch tool to revert the changes.
+  warnings.warn(msg, SourceChangeWarning)
+2019-09-11 22:29:17,401	INFO	Waiting for request: end2end_yenchibi_queue ...
+2019-09-11 22:29:17,402	INFO	Receive 4cd12a7e347718a3be4701acd77e1e38: chủ tịch quốc hội nguyễn thị kim ngân dự lễ khai giảng tại trường trung học phổ thông tháp mười
+2019-09-11 22:29:17,402	INFO	Segment: chủ tịch quốc hội nguyễn thị kim ngân dự lễ khai giảng tại trường trung học phổ thông tháp mười
+2019-09-11 22:29:17,799	INFO	Generate wav: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/4cd12a7e347718a3be4701acd77e1e38.wav
+2019-09-11 22:29:17,915	INFO	Generate aac: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/4cd12a7e347718a3be4701acd77e1e38.aac
+2019-09-11 22:29:17,915	INFO	============ SUCCESS ============
+2019-09-11 22:29:17,915	INFO	Receive 2c1a5c9c3a50b9b114c432cd5c373bce: trong lễ khai giảng sáng nay , thầy và trò trường trung học phổ thông tháp mười vinh dự chào đón chủ tịch quốc hội nguyễn thị kim ngân trưởng đoàn công tác của quốc hội đến chúc mừng và chung vui ngày khai giảng
+2019-09-11 22:29:17,916	INFO	Segment: trong lễ khai giảng sáng nay, thầy và trò trường trung học phổ thông tháp mười vinh dự chào đón chủ tịch quốc hội nguyễn thị kim ngân trưởng đoàn công tác của quốc hội đến chúc mừng và chung vui ngày khai giảng
+2019-09-11 22:29:18,757	INFO	Generate wav: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/2c1a5c9c3a50b9b114c432cd5c373bce.wav
+2019-09-11 22:29:18,890	INFO	Generate aac: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/2c1a5c9c3a50b9b114c432cd5c373bce.aac
+2019-09-11 22:29:18,890	INFO	============ SUCCESS ============
+2019-09-11 22:29:18,891	INFO	Receive 14377f83926e2faeddf6dbddecbf5ad9: dự lễ khai giảng còn có bí thư tỉnh ủy đồng tháp lê minh hoan , chủ tịch ủy ban nhân dân tỉnh nguyễn văn dương , bí thư huyện ủy tháp mười nhị văn khải , chủ tịch ủy ban nhân dân huyện đinh minh dũng
+2019-09-11 22:29:18,891	INFO	Segment: dự lễ khai giảng còn có bí thư tỉnh ủy đồng tháp lê minh hoan, chủ tịch ủy ban nhân dân tỉnh nguyễn văn dương
+2019-09-11 22:29:19,390	INFO	Segment: bí thư huyện ủy tháp mười nhị văn khải, chủ tịch ủy ban nhân dân huyện đinh minh dũng
+2019-09-11 22:29:19,790	INFO	Generate wav: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/14377f83926e2faeddf6dbddecbf5ad9.wav
+2019-09-11 22:29:19,921	INFO	Generate aac: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/14377f83926e2faeddf6dbddecbf5ad9.aac
+2019-09-11 22:29:19,922	INFO	============ SUCCESS ============
+2019-09-11 22:29:19,922	INFO	Receive 47673c727f574c559a0c9a602dde6bf1: trường trung học phổ thông th
+2019-09-11 22:29:19,922	INFO	Segment: trường trung học phổ thông th
+2019-09-11 22:29:20,103	INFO	Generate wav: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/47673c727f574c559a0c9a602dde6bf1.wav
+2019-09-11 22:29:20,192	INFO	Generate aac: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/47673c727f574c559a0c9a602dde6bf1.aac
+2019-09-11 22:29:20,192	INFO	============ SUCCESS ============
+2019-09-11 22:29:20,193	INFO	Receive ef4d58174c9129baa53173873c99fc7c: áp mười là trường đầu tiên của tỉnh đồng tháp được công nhận trường chuẩn quốc gia vào năm hai nghìn không trăm linh tư
+2019-09-11 22:29:20,193	INFO	Segment: áp mười là trường đầu tiên của tỉnh đồng tháp được công nhận trường chuẩn quốc gia vào năm hai nghìn không trăm linh tư
+2019-09-11 22:29:20,667	INFO	Generate wav: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/ef4d58174c9129baa53173873c99fc7c.wav
+2019-09-11 22:29:20,780	INFO	Generate aac: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/ef4d58174c9129baa53173873c99fc7c.aac
+2019-09-11 22:29:20,780	INFO	============ SUCCESS ============
+2019-09-11 22:29:20,780	INFO	Receive e18425b73ef14f177c7723b80f30543b: đến nay , trường được đầu tư cơ sở vật chất , nhiều giáo viên được bồi dưỡng đạt và vượt chuẩn , chất lượng giáo dục được nâng lên , tỷ lệ học đỗ tốt nghiệp hàng năm đạt một trăm phần trăm , trên sáu mươi phần trăm đỗ vào các trường đại học , cao đẳng
+2019-09-11 22:29:20,781	INFO	Segment: đến nay, trường được đầu tư cơ sở vật chất, nhiều giáo viên được bồi dưỡng đạt và vượt chuẩn
+2019-09-11 22:29:21,187	INFO	Segment: chất lượng giáo dục được nâng lên, tỷ lệ học đỗ tốt nghiệp hàng năm đạt một trăm phần trăm
+2019-09-11 22:29:21,581	INFO	Segment: trên sáu mươi phần trăm đỗ vào các trường đại học, cao đẳng
+2019-09-11 22:29:21,866	INFO	Generate wav: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/e18425b73ef14f177c7723b80f30543b.wav
+2019-09-11 22:29:22,005	INFO	Generate aac: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/e18425b73ef14f177c7723b80f30543b.aac
+2019-09-11 22:29:22,006	INFO	============ SUCCESS ============
+2019-09-11 22:29:22,006	INFO	Receive 768b1305916cd16273848a1a10585bc6: trong lễ khai giảng , chủ tịch ủy ban nhân dân huyện tháp mười đọc thư của tổng bí thư , chủ tịch nước gửi ngành giáo dục nhân dịp khai giảng năm học mới hai nghìn không trăm mười chín đến hai nghìn không trăm hai mươi
+2019-09-11 22:29:22,007	INFO	Segment: trong lễ khai giảng, chủ tịch ủy ban nhân dân huyện tháp mười đọc thư của tổng bí thư, chủ tịch nước gửi ngành giáo dục nhân dịp khai giảng năm học mới hai nghìn không trăm mười chín đến hai nghìn không trăm hai mươi
+2019-09-11 22:29:22,883	INFO	Generate wav: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/768b1305916cd16273848a1a10585bc6.wav
+2019-09-11 22:29:23,013	INFO	Generate aac: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/768b1305916cd16273848a1a10585bc6.aac
+2019-09-11 22:29:23,013	INFO	============ SUCCESS ============
+2019-09-11 22:29:23,014	INFO	Receive 5c93c2617bc9e1d4f515e8467cfdc6a2: phát biểu trong lễ khai giảng , chủ tịch quốc hội nguyễn thị kim ngân ghi nhận sự nỗ lực của thầy và trò trường trung học phổ thông tháp mười và đề nghị ngành giáo dục tỉnh , huyện nói chung và trường trung học phổ thông tháp mười nói riêng , cần quan tâm đến công tác đào tạo , bồi dững giáo viên có phẩm chất giáo dục chính trị , chuyên môn vững vàng , cần khơi dậy niềm vui , niềm say mê học tập để học sinh chủ động phát huy , sáng tạo , tạo môi trường sư phạm an toàn , thân thiện , kết hợp giữa học với hành , rèn luyện kỹ năng sống , tính tự lập cho học sinh
+2019-09-11 22:29:23,014	INFO	Segment: phát biểu trong lễ khai giảng, chủ tịch quốc hội nguyễn thị kim ngân ghi nhận sự nỗ lực của thầy và trò trường trung học phổ thông tháp mười và đề nghị ngành giáo dục tỉnh
+2019-09-11 22:29:23,724	INFO	Segment: huyện nói chung và trường trung học phổ thông tháp mười nói riêng, cần quan tâm đến công tác đào tạo
+2019-09-11 22:29:24,166	INFO	Segment: bồi dững giáo viên có phẩm chất giáo dục chính trị, chuyên môn vững vàng, cần khơi dậy niềm vui
+2019-09-11 22:29:24,579	INFO	Segment: niềm say mê học tập để học sinh chủ động phát huy, sáng tạo, tạo môi trường sư phạm an toàn
+2019-09-11 22:29:25,012	INFO	Segment: thân thiện, kết hợp giữa học với hành, rèn luyện kỹ năng sống, tính tự lập cho học sinh
+2019-09-11 22:29:25,429	INFO	Generate wav: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/5c93c2617bc9e1d4f515e8467cfdc6a2.wav
+2019-09-11 22:29:25,630	INFO	Generate aac: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/5c93c2617bc9e1d4f515e8467cfdc6a2.aac
+2019-09-11 22:29:25,630	INFO	============ SUCCESS ============
+2019-09-11 22:29:25,631	INFO	Receive f4948128d7db0dc79b9d10aeddc94af9: cũng trong lễ khai giảng , chủ tịch quốc hội nguyễn thị kim ngân đã trao tặng trường trung học phổ thông tháp mười một tivi , năm bộ máy vi tính , hai máy in và trồng cây lưu niệm tại trường
+2019-09-11 22:29:25,631	INFO	Segment: cũng trong lễ khai giảng, chủ tịch quốc hội nguyễn thị kim ngân đã trao tặng trường trung học phổ thông tháp mười một tivi
+2019-09-11 22:29:26,138	INFO	Segment: năm bộ máy vi tính, hai máy in và trồng cây lưu niệm tại trường
+2019-09-11 22:29:26,444	INFO	Generate wav: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/f4948128d7db0dc79b9d10aeddc94af9.wav
+2019-09-11 22:29:26,571	INFO	Generate aac: /data/tts/workspace/tts-service-aic/chunk/end2end_yenchibi/f4948128d7db0dc79b9d10aeddc94af9.aac
+2019-09-11 22:29:26,571	INFO	============ SUCCESS ============

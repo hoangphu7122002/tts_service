@@ -1,0 +1,49 @@
+version: '3.5'
+
+x-tts-config: &tts-config
+  image: tts-engine
+  restart: always
+  depends_on:
+    - _tts_engine_image_build
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - capabilities: [ gpu ]
+  environment:
+    - TZ=Asia/Ho_Chi_Minh
+  volumes:
+    - .:/app/
+    - ../trained-models:/trained-models
+
+services:
+  _tts_engine_image_build:
+    image: tts-engine
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: [ 'echo', 'build completed' ]
+
+  camhieu:
+    <<: *tts-config
+    command: /bin/bash -ci "python worker_main.py --voice end2end_camhieu --cuda 0 --new True"
+
+  luongthuhien:
+    <<: *tts-config
+    command: /bin/bash -ci "python worker_main.py --voice end2end_luongthuhien --cuda 0 --new True"
+
+  halinh:
+    <<: *tts-config
+    command: /bin/bash -ci "python worker_main.py --voice end2end_halinh --cuda 0 --new True"
+
+  hoamai_rt:
+    <<: *tts-config
+    command: /bin/bash -ci "python worker_main.py --voice end2end_hoamai_rt --cuda 1 --new True"
+
+  hongdao_rt:
+    <<: *tts-config
+    command: /bin/bash -ci "python worker_main.py --voice end2end_hongdao_rt --cuda 1 --new True"
+
+  huongsen_rt:
+    <<: *tts-config
+    command: /bin/bash -ci "python worker_main.py --voice end2end_huongsen_rt --cuda 1 --new True"
