@@ -1,0 +1,54 @@
+version: 1
+disable_existing_loggers: false
+
+formatters:
+  standard:
+    format: "%(asctime)s %(levelname)s [%(threadName)s] %(name)s (%(filename)s:%(lineno)d): %(message)s"
+  error:
+    format: "%(levelname)s <PID %(process)d:%(processName)s> %(name)s.%(funcName)s(): %(message)s"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: standard
+    stream: ext://sys.stdout
+
+  debug_file_handler:
+    class: logging.handlers.RotatingFileHandler
+    level: DEBUG
+    formatter: standard
+    filename: logs/full.log
+    maxBytes: 10485760 # 10MB
+    backupCount: 20
+    encoding: utf8
+
+  error_file_handler:
+    class: logging.handlers.RotatingFileHandler
+    level: ERROR
+    formatter: error
+    filename: logs/errors.log
+    maxBytes: 10485760 # 10MB
+    backupCount: 20
+    encoding: utf8
+
+root:
+  level: NOTSET
+  handlers: [console, debug_file_handler, error_file_handler]
+  propogate: yes
+
+# Custom logging levels
+loggers:
+  pika:
+    level: INFO
+    handlers: [console, error_file_handler, debug_file_handler]
+    propogate: yes
+  <module>:
+    level: INFO
+    handlers: [console, error_file_handler, debug_file_handler]
+    propogate: no
+
+  <module.x>:
+    level: DEBUG
+    handlers: [error_file_handler, debug_file_handler]
+    propogate: yes

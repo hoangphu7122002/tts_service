@@ -1,0 +1,26 @@
+version: '3.5'
+
+services:
+  tts-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+    ports:
+      - "8778:8778"
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+      - ./chunk:/app/chunk
+  flower:
+    image: mher/flower
+    restart: always
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+    ports:
+      - "5555:5555"
+    volumes:
+      - ./tts_service/mycelery.py:/data/mycelery.py
+    command: celery -A mycelery:app flower --purge_offline_workers=1

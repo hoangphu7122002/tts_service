@@ -1,0 +1,46 @@
+{
+    "data": "data/numiennam", 
+    "version": "v1",   
+    "training_config": {  
+        "fp16_run": true,             
+        "epochs": 10000,
+        "iters_per_checkpoint": 5000,
+        "batch_size": 8,
+        "checkpoint_path": "last"      
+    },     
+    "optimizer_config": {  
+        "learning_rate": 1e-4,
+        "lr_decay": 0.5,
+        "iters_per_decay_lr": 200000,
+        "sigma": 1
+    },   
+    "audio_config": {
+        "trim_silence": true,
+        "trim_top_db": 40,
+        "pre_emphasize": true,
+        "pre_emphasis": 0.97,
+        "rescale": true,
+        "rescale_max": 0.8
+    },   
+    "feature_config": { 
+        "segment_length": 16000,
+        "sampling_rate": 22050,
+        "filter_length": 1024,
+        "hop_length": 256,
+        "win_length": 1024,
+        "n_mel_channels": 80,
+        "mel_fmin": 95.0,
+        "mel_fmax": 7600.0
+    },
+    "model_config": {
+        "n_flows": 12,
+        "n_group": 8,
+        "n_early_every": 4,
+        "n_early_size": 2,
+        "WN_config": {
+            "n_layers": 8,
+            "n_channels": 256,
+            "kernel_size": 3
+        }
+    }
+}

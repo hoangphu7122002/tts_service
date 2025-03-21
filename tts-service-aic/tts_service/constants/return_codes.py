@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# @AUTHOR : thangdc94
+# @Date : 2021/10/25
+
+API_SUCCESS = 0
+API_MISSING_FIELD = 101
+API_VOICE_NOT_FOUND = 102
+API_ERROR = 111
+API_CANNOT_READ = 112
+API_CODE_TIMEOUT = 113

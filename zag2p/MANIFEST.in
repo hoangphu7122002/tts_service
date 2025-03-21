@@ -1,0 +1,5 @@
+include ZaG2P/config.yml
+recursive-include ZaG2P/intermediate *
+include ZaG2P/tts_dict_prepare/vn.dict
+include ZaG2P/tts_dict_prepare/oov.vn.dict
+include ZaG2P/tts_dict_prepare/phoneme_syllable_vn.dict

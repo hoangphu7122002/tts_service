@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>TTS Demo</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    {% if error_message %}
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-danger">
+                    <strong>{{ error_message }}</strong>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    <div style="width: 100%; overflow: hidden;">
+
+        <div title="oov" style="overflow-y: scroll; margin-top: 50px; width: 250px; height:200px; float: left;">
+            {% for oov in oov_list %}
+                <li style="align-self: left"> {{ oov }}</li>
+            {% endfor %}
+        </div>
+
+        <div title="text" class="row" style="margin-top: 50px; margin-left: 250px">
+            <div class="col-md-12">
+                <form method="POST" action="" class="text-center">
+                    <h6><input type="checkbox" name="normOOV" value="true" {% if normOOV %}checked{% endif %}>normOOV</h6>
+
+                    <div class="form-group">
+                        <textarea class="form-control" rows="10" id="text" name="text" placeholder={{place_holder}} required>{% if text %}{{ text }}{% else %}{{ place_holder }}{% endif %}</textarea>
+                    </div>
+                    <div class="form-group">
+                        {#<label class="radio-inline"><input type="radio" name="voice" value="merlin_phamtienquan" {% if not voice or voice == "merlin_phamtienquan" %} checked {% endif %}>merlin_phamtienquan</label>#}
+						<label class="radio-inline"><input type="radio" name="voice" value="merlin_doanngocle" {% if not voice or voice == "merlin_doanngocle" %} checked {% endif %}>Merlin-doanngocle</label>
+                        <label class="radio-inline"><input type="radio" name="voice" value="merlin_trangtay" {% if not voice or voice == "merlin_trangtay" %} checked {% endif %}>Merlin-trangtay</label>
+                        {#<label class="radio-inline"><input type="radio" name="voice" value="phamtienquan-cleanbytool-balance-3k7" {% if voice == "phamtienquan-cleanbytool-balance-3k7" %} checked {% endif %} >{{ value }}</label>#}
+						<label class="radio-inline"><input type="radio" name="voice" value="end2end_doanngocle" {% if not voice or voice == "end2end_doanngocle" %} checked {% endif %}>End2End-doanngocle</label>
+                        <label class="radio-inline"><input type="radio" name="voice" value="end2end_lethiyen" {% if not voice or voice == "end2end_lethiyen" %} checked {% endif %}>End2End-lethiyen</label>
+						<label class="radio-inline"><input type="radio" name="voice" value="end2end_trangtay" {% if not voice or voice == "end2end_trangtay" %} checked {% endif %}>End2End-trangtay</label>
+                    </div>
+                    <button type="submit" class="btn btn-default btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+   
+    {% if audio %}
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-12">
+                <audio controls autoplay style="width: 100%">
+                    <source src="{{ audio }}" type="audio/mpeg">
+                </audio>
+            </div>
+			<div class="col-md-12 text-center">
+                <h3>{{ text_norm }}</h3>
+            </div>
+        </div>
+    {% endif %}
+</div>
+</body>
+</html>
